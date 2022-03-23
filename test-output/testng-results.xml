@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-23T13:40:55 EET" name="Default suite" finished-at="2022-03-23T13:40:56 EET" duration-ms="402">
+    <groups>
+    </groups>
+    <test started-at="2022-03-23T13:40:55 EET" name="Default test" finished-at="2022-03-23T13:40:56 EET" duration-ms="402">
+      <class name="IPS.Dasman.AdminloginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:IPS.Dasman.AdminloginTest@2de56eb2]" started-at="2022-03-23T13:40:31 EET" name="openBrowser" finished-at="2022-03-23T13:40:55 EET" duration-ms="23737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginAsAdmin()[pri:1, instance:IPS.Dasman.AdminloginTest@2de56eb2]" started-at="2022-03-23T13:40:55 EET" name="loginAsAdmin" finished-at="2022-03-23T13:40:56 EET" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAsAdmin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:IPS.Dasman.AdminloginTest@2de56eb2]" started-at="2022-03-23T13:40:56 EET" name="screenshotOnFailure" finished-at="2022-03-23T13:40:56 EET" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginAsAdmin status=SUCCESS method=AdminloginTest.loginAsAdmin()[pri:1, instance:IPS.Dasman.AdminloginTest@2de56eb2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:IPS.Dasman.AdminloginTest@2de56eb2]" started-at="2022-03-23T13:40:56 EET" name="quitBrowser" finished-at="2022-03-23T13:40:56 EET" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- IPS.Dasman.AdminloginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
