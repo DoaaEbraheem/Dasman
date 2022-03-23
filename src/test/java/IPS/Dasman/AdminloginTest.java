@@ -23,6 +23,7 @@ public class AdminloginTest extends TestBase{
 		String password = prop.getProperty("password");
 		Loginpage = new AdminLogin(driver);
 		Loginpage.LoginwithAdmin(email, password);
+	
 
 	}
 
