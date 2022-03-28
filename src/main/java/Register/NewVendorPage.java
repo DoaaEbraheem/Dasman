@@ -1,8 +1,12 @@
 package Register;
 
+
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.Select;
 
 import IPS.Dasman.PageBase;
 
@@ -19,19 +23,19 @@ public class NewVendorPage extends PageBase{
 	@FindBy(xpath = "//*[@id=\"inputs-form\"]/div[6]/a")
 	WebElement LoginRegisterbutton;
 	
-	@FindBy(xpath = "//*[@id=\"inputs-form\"]/div[1]/span")
+	@FindBy(name = "company_id")
 	WebElement Selectcompany;
 	
-	@FindBy(id = "Name")
+	@FindBy(id="Name")
 	WebElement Vendorname;
 	
-	@FindBy(id = "Email")
+	@FindBy(id="Email")
 	WebElement VendorEmail;
 	
-	@FindBy(id = "Password")
+	@FindBy(id="Password")
 	WebElement Password;
 	
-	@FindBy(id = "confirmNewPass")
+	@FindBy(id="confirmNewPass")
 	WebElement RePassword;
 	
 	@FindBy(id = "phone")
@@ -46,12 +50,14 @@ public class NewVendorPage extends PageBase{
 	@FindBy(xpath = "//*[@id=\"inputs-form\"]/div[9]/button")
 	WebElement clickRegister;
 	
-	public void VendorRegistration(String Name,String mail, String pass,String Repass,String mobile,String job,String category) {
+	public void VendorRegistration(String comp,String Name,String mail, String pass,String Repass,String mobile,String job, String category) {
 		clickButton(HomeLoginbutton);
 		clickButton(LoginRegisterbutton);
-	//	selectDropdownmenu(Selectcompany, comp);
-		setTextElementText(Vendorname, Name);
+		Select dropdown = new Select(driver.findElement(By.name( "company_id")));
+		dropdown.selectByVisibleText(comp);
+		//selectDropdownmenubyvalue(Selectcompany,comp);
 		setTextElementText(VendorEmail, mail);
+		setTextElementText(Vendorname, Name);
 		setTextElementText(Password, pass);
 		setTextElementText(RePassword, Repass);
 		setTextElementText(VendorPhone, mobile);

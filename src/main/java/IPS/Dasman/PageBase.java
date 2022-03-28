@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PageBase {
 	protected WebDriver driver;
-	public Select select ; 
 	public Actions action ;
+	public static Select dropdown;
 
 	// public static Select Drop down;
 	public PageBase(WebDriver driver) {
@@ -27,13 +27,17 @@ public class PageBase {
 	}
 
 	protected static void selectDropdownmenu(WebElement selectvalue, String text) {
-		selectvalue.click();
-		Select dropdown = new Select(selectvalue);
+		dropdown = new Select(selectvalue);
 		dropdown.selectByVisibleText(text);
 
 	}
 
+	protected static void selectDropdownmenubyvalue(WebElement selectvalue, String text) {
+		selectvalue.click();
+		dropdown = new Select(selectvalue);
+		dropdown.selectByValue(text);
 
+	}
 	public void scrollToBottom() 
 
 	{
