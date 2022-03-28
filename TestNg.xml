@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite thread-count="1" verbose="1" name="Approval cycle"
+	parallel="tests">
+
+	<test name="Dasman">
+		<classes>
+			<class name="IPS.Dasman.AdminloginTest" />
+			<class name="AdminCompany.UserRequestSearchTest" />
+			
+		</classes>
+				
+	</test>
+	
+</suite>

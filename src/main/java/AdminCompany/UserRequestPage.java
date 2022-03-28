@@ -26,6 +26,15 @@ public class UserRequestPage extends PageBase{
 
 	@FindBy(xpath = "/html/body/div[1]/div/div/div/div/div/div[2]/div/div/div/div/table/tbody/tr/td[8]/div/a[3]")
 	WebElement Rejectbutton;
+	
+	@FindBy(name="roles[]")
+	WebElement chooseRole;
+	
+	@FindBy(xpath = "//*[@id=\"inputs-form\"]/div[3]/button")
+	WebElement	finalapprove;
+	
+	@FindBy(xpath = "//*[@id=\"inputs-form\"]/div[3]/button")
+	WebElement finalReject;
 
 	private void SearchForName(String Vendorname) {
 		setTextElementText(Searchinput, Vendorname);
@@ -34,14 +43,17 @@ public class UserRequestPage extends PageBase{
 
 	}
 
-	private void Approvemethod(String Vendorname) {
+	private void Approvemethod(String Vendorname, String Role) {
 		SearchForName(Vendorname);
 		clickButton(approvebutton);
+		selectDropdownmenu(chooseRole, Role);
+		clickButton(finalapprove);
 
 	}
 
 	private void Rejectmethod(String Vendorname) {
 		SearchForName(Vendorname);
 		clickButton(Rejectbutton);
+		clickButton(finalReject);
 	}
 }

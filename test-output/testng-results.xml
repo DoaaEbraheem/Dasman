@@ -1,111 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-28T11:06:24 EET" name="Default suite" finished-at="2022-03-28T11:06:25 EET" duration-ms="554">
+  <suite started-at="2022-03-28T13:48:05 EET" name="Approval cycle" finished-at="2022-03-28T13:48:06 EET" duration-ms="390">
     <groups>
     </groups>
-    <test started-at="2022-03-28T11:06:24 EET" name="Default test" finished-at="2022-03-28T11:06:25 EET" duration-ms="554">
-      <class name="Register.NewVendor">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Register.NewVendor@74dbb1ee]" started-at="2022-03-28T11:06:16 EET" name="openBrowser" finished-at="2022-03-28T11:06:24 EET" duration-ms="8541" status="PASS">
+    <test started-at="2022-03-28T13:48:05 EET" name="Dasman" finished-at="2022-03-28T13:48:06 EET" duration-ms="390">
+      <class name="IPS.Dasman.AdminloginTest">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:IPS.Dasman.AdminloginTest@5f8e8a9d]" started-at="2022-03-28T13:47:57 EET" name="openBrowser" finished-at="2022-03-28T13:48:05 EET" duration-ms="7990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="RegisternewVendor()[pri:0, instance:Register.NewVendor@74dbb1ee]" started-at="2022-03-28T11:06:25 EET" name="RegisternewVendor" finished-at="2022-03-28T11:06:25 EET" duration-ms="166" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="inputs-form"]/div[6]/a"}
-  (Session info: chrome=99.0.4844.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-SALM10G', ip: '172.16.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [348c8a97920af4474fa0fc919b23b259, findElement {using=xpath, value=//*[@id="inputs-form"]/div[6]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\doaa\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57504/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 348c8a97920af4474fa0fc919b23b259]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="inputs-form"]/div[6]/a"}
-  (Session info: chrome=99.0.4844.82)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'DESKTOP-SALM10G', ip: '172.16.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [348c8a97920af4474fa0fc919b23b259, findElement {using=xpath, value=//*[@id="inputs-form"]/div[6]/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.82, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\doaa\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:57504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57504/devtoo..., se:cdpVersion: 99.0.4844.82, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 348c8a97920af4474fa0fc919b23b259
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy20.click(Unknown Source)
-at IPS.Dasman.PageBase.clickButton(PageBase.java:50)
-at Register.NewVendorPage.VendorRegistration(NewVendorPage.java:55)
-at Register.NewVendor.RegisternewVendor(NewVendor.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="loginAsAdmin()[pri:1, instance:IPS.Dasman.AdminloginTest@5f8e8a9d]" started-at="2022-03-28T13:48:05 EET" name="loginAsAdmin" finished-at="2022-03-28T13:48:06 EET" duration-ms="322" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- RegisternewVendor -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Register.NewVendor@74dbb1ee]" started-at="2022-03-28T11:06:25 EET" name="screenshotOnFailure" finished-at="2022-03-28T11:06:25 EET" duration-ms="329" status="PASS">
+        </test-method> <!-- loginAsAdmin -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:IPS.Dasman.AdminloginTest@5f8e8a9d]" started-at="2022-03-28T13:48:06 EET" name="screenshotOnFailure" finished-at="2022-03-28T13:48:06 EET" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=RegisternewVendor status=FAILURE method=NewVendor.RegisternewVendor()[pri:0, instance:Register.NewVendor@74dbb1ee] output={null}]]]>
+                <![CDATA[[TestResult name=loginAsAdmin status=SUCCESS method=AdminloginTest.loginAsAdmin()[pri:1, instance:IPS.Dasman.AdminloginTest@5f8e8a9d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Register.NewVendor@74dbb1ee]" started-at="2022-03-28T11:06:25 EET" name="quitBrowser" finished-at="2022-03-28T11:06:26 EET" duration-ms="889" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:IPS.Dasman.AdminloginTest@5f8e8a9d]" started-at="2022-03-28T13:48:06 EET" name="quitBrowser" finished-at="2022-03-28T13:48:07 EET" duration-ms="739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- Register.NewVendor -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- IPS.Dasman.AdminloginTest -->
+      <class name="AdminCompany.UserRequestSearchTest">
+        <test-method signature="SearchForVendorName()[pri:0, instance:AdminCompany.UserRequestSearchTest@4722ef0c]" started-at="2022-03-28T13:48:05 EET" name="SearchForVendorName" finished-at="2022-03-28T13:48:05 EET" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchForVendorName -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:AdminCompany.UserRequestSearchTest@4722ef0c]" started-at="2022-03-28T13:48:05 EET" name="screenshotOnFailure" finished-at="2022-03-28T13:48:05 EET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SearchForVendorName status=SUCCESS method=UserRequestSearchTest.SearchForVendorName()[pri:0, instance:AdminCompany.UserRequestSearchTest@4722ef0c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenshotOnFailure -->
+      </class> <!-- AdminCompany.UserRequestSearchTest -->
+    </test> <!-- Dasman -->
+  </suite> <!-- Approval cycle -->
 </testng-results>

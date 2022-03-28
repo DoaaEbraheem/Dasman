@@ -63,7 +63,7 @@ public class NewVendorPage extends PageBase{
 		setTextElementText(VendorPhone, mobile);
 		selectDropdownmenu(Jobtitle, job);
 		selectDropdownmenu(Vendorcategory, category);
-		//clickButton(clickRegister);
+		clickButton(clickRegister);
 	}
 
 }
