@@ -2,35 +2,35 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-28T15:57:45 EET" name="Default suite" finished-at="2022-03-28T15:58:31 EET" duration-ms="46181">
+  <suite started-at="2022-03-29T14:51:44 EET" name="Default suite" finished-at="2022-03-29T14:52:29 EET" duration-ms="45107">
     <groups>
     </groups>
-    <test started-at="2022-03-28T15:57:45 EET" name="Default test" finished-at="2022-03-28T15:58:31 EET" duration-ms="46181">
-      <class name="IPS.Dasman.VendorLoginTest">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:IPS.Dasman.VendorLoginTest@2de56eb2]" started-at="2022-03-28T15:57:32 EET" name="openBrowser" finished-at="2022-03-28T15:57:45 EET" duration-ms="12842" status="PASS">
+    <test started-at="2022-03-29T14:51:44 EET" name="Default test" finished-at="2022-03-29T14:52:29 EET" duration-ms="45107">
+      <class name="Register.NewVendor">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:Register.NewVendor@6c42f2a1]" started-at="2022-03-29T14:51:31 EET" name="openBrowser" finished-at="2022-03-29T14:51:44 EET" duration-ms="12687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="loginAsVendor()[pri:0, instance:IPS.Dasman.VendorLoginTest@2de56eb2]" started-at="2022-03-28T15:57:45 EET" name="loginAsVendor" finished-at="2022-03-28T15:58:20 EET" duration-ms="35534" status="PASS">
+        <test-method signature="RegisternewVendor()[pri:0, instance:Register.NewVendor@6c42f2a1]" started-at="2022-03-29T14:51:44 EET" name="RegisternewVendor" finished-at="2022-03-29T14:52:22 EET" duration-ms="38522" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginAsVendor -->
-        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:IPS.Dasman.VendorLoginTest@2de56eb2]" started-at="2022-03-28T15:58:22 EET" name="screenshotOnFailure" finished-at="2022-03-28T15:58:22 EET" duration-ms="188" status="PASS">
+        </test-method> <!-- RegisternewVendor -->
+        <test-method is-config="true" signature="screenshotOnFailure(org.testng.ITestResult)[pri:0, instance:Register.NewVendor@6c42f2a1]" started-at="2022-03-29T14:52:24 EET" name="screenshotOnFailure" finished-at="2022-03-29T14:52:24 EET" duration-ms="221" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginAsVendor status=SUCCESS method=VendorLoginTest.loginAsVendor()[pri:0, instance:IPS.Dasman.VendorLoginTest@2de56eb2] output={null}]]]>
+                <![CDATA[[TestResult name=RegisternewVendor status=SUCCESS method=NewVendor.RegisternewVendor()[pri:0, instance:Register.NewVendor@6c42f2a1] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenshotOnFailure -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:IPS.Dasman.VendorLoginTest@2de56eb2]" started-at="2022-03-28T15:58:33 EET" name="quitBrowser" finished-at="2022-03-28T15:58:34 EET" duration-ms="1304" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:Register.NewVendor@6c42f2a1]" started-at="2022-03-29T14:52:31 EET" name="quitBrowser" finished-at="2022-03-29T14:52:32 EET" duration-ms="1209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- IPS.Dasman.VendorLoginTest -->
+      </class> <!-- Register.NewVendor -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
