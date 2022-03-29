@@ -18,7 +18,7 @@ public class AdminloginTest extends TestBase{
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		
+		driver.get(prop.getProperty("urladmin"));
 		String email = prop.getProperty("admin");
 		String password = prop.getProperty("password");
 		Loginpage = new AdminLogin(driver);
